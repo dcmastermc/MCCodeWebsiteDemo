@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Expressway";
+    src: url("/fonts/expressway rg.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Expressway";
+    src: url("/fonts/expressway rg bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Expressway";
+    src: url("/fonts/expressway rg italic.woff") format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Expressway";
+    src: url("/fonts/expressway rg bold italic.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
