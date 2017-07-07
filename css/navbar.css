@@ -7,9 +7,6 @@
 
 .navbar-default .navbar-brand {
     font-size: 1.6em;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 80px;
     color: #ecf0f1;
 }
 
@@ -71,23 +68,15 @@
 
 @media (max-width: 767px) {
 
-    .navbar-default .navbar-fixed-top {
+    .navbar-default {
         min-height: 50px;
         height: 50px;
     }
 
-    .navbar-default .navbar-brand {
-        float: left;
-        height: 50px;
-        padding: 15px 15px;
-        font-size: 18px;
-        line-height: 20px;
-    }
-
     .navbar-default .navbar-nav>li>a {
+        line-height: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
-        line-height: 20px;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -104,6 +93,11 @@
 }
 
 @media (min-width: 768px) {
+    .navbar-default .navbar-brand {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        line-height: 80px;
+    }
     .navbar-center {
         position: absolute;
         left: 50%;
