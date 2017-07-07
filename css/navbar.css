@@ -25,7 +25,7 @@
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #ffffff;
-
+    background: linear-gradient(to bottom, #ff7f00 0%, #ffffff 200%);
 /*  background-color: #D55401;  */
 }
 
@@ -37,7 +37,7 @@
 
 .navbar-default .navbar-toggle {
     border: none;
-/*  border-color: #D55401;  */
+    border-color: #D55401;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -46,10 +46,12 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar {
+    background: linear-gradient(to bottom, #ff7f00 0%, #ffffff 200%);
 /*  background-color: #ecf0f1;  */
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background: linear-gradient(to bottom, #ff7f00 0%, #ffffff 200%);
 /*  border-color: #ecf0f1;  */
 }
 
