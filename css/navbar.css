@@ -26,14 +26,14 @@
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #ffffff;
-    background: linear-gradient(to bottom, #ff7f00 0%, #ffffff 200%);
-/*  background-color: #D55401;  */
+/*  background: linear-gradient(to bottom, #ff7f00 0%, #ffffff 200%);  */
+    background-color: #ff7f00;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
     color: #ffffff;
-    background: linear-gradient(to bottom, #ff7f00 0%, #ffffff 200%);
-/*  background-color: #D55401;  */
+/*  background: linear-gradient(to bottom, #ff7f00 0%, #ffffff 200%);  */
+    background-color: #ff7f00;
 }
 
 .navbar-default .navbar-toggle {
