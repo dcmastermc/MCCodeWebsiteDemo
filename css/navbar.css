@@ -1,5 +1,5 @@
 .navbar-default {
-    background: linear-gradient(to bottom, #ff8800 0%, #888888 150%);
+    background: linear-gradient(to bottom, #ff8800 0%, #884400 100%);
 /*  border-color: #000000;  */
 }
 
@@ -25,6 +25,7 @@
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #ffffff;
+
 /*  background-color: #D55401;  */
 }
 
@@ -42,11 +43,11 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #ecf0f1;
+/*  background-color: #ecf0f1;  */
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #ecf0f1;
+/*  border-color: #ecf0f1;  */
 }
 
 .navbar-default .navbar-link {
@@ -66,7 +67,7 @@
     }
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
         color: #ffffff;
-        background: linear-gradient(to bottom, #ff8800 0%, #888888 150%);
+        background: linear-gradient(to bottom, #ff8800 0%, #884400 100%);
     /*  border-color: #000000;  */
     }
 }
