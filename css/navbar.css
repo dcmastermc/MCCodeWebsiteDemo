@@ -78,16 +78,15 @@
         padding-bottom: 10px;
     }
 
-    .navbar-default .navbar-brand {
+    /*.navbar-default .navbar-brand {
         float: left;
         height: 50px;
         padding: 15px 15px;
         font-size: 18px;
         line-height: 20px;
-    }
+    }*/
 
     .navbar-default .navbar-brand>img {
-        margin-top: 5px;
         height: 40px;
         width: auto;
     }
