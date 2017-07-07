@@ -1,11 +1,15 @@
 .navbar-default {
     background: linear-gradient(to bottom, #ff7f00 0%, #bf5f00 100%);
     min-height: 80px;
+    max-height: 80px;
 /*  border-color: #000000;  */
 }
 
 .navbar-default .navbar-brand {
     font-size: 1.6em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
     color: #ecf0f1;
 }
 
@@ -65,17 +69,22 @@
     color: #ffffff;
 }
 
-@media (min-height: 768) {
-    .navbar-default {
-        height: 80px;
-    }
-}
-
 @media (max-width: 767px) {
+
+    .navbar-default {
+        min-height: 50px;
+        max-height: 50px;
+    }
+
+    .navbar-default .navbar-brand {
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     .navbar-default .navbar-nav>li>a {
         line-height: 20px;
         padding-top: 10px;
-        padding-bottom: 10px;}
+        padding-bottom: 10px;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
