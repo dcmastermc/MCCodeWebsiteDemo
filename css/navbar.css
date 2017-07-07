@@ -8,6 +8,17 @@
     color: #ecf0f1;
 }
 
+.navbar-default .navbar-brand {
+    font-size: 25px;
+    color: #ecf0f1;
+}
+
+.navbar-default .navbar-brand>img {
+    top: 10px;
+    height: 60px;
+    width: auto;
+}
+
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #ffffff;
 }
@@ -73,6 +84,12 @@
         padding: 15px 15px;
         font-size: 18px;
         line-height: 20px;
+    }
+
+    .navbar-default .navbar-brand>img {
+        top: 5px;
+        height: 40px;
+        width: auto;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
