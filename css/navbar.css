@@ -1,5 +1,5 @@
 .navbar-default {
-    background: linear-gradient(to bottom, #ff8800 0%, #884400 100%);
+    background: linear-gradient(to bottom, #ff7f00 0%, #bf5f00 100%);
 /*  border-color: #000000;  */
 }
 
@@ -31,14 +31,17 @@
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
     color: #ffffff;
+    background: linear-gradient(to bottom, #ff7f00 0%, #ffffff 200%);
 /*  background-color: #D55401;  */
 }
 
 .navbar-default .navbar-toggle {
+    border: none;
 /*  border-color: #D55401;  */
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: linear-gradient(to bottom, #ff7f00 0%, #ffffff 200%);
 /*  background-color: #D55401;  */
 }
 
