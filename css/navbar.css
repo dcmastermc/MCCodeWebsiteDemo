@@ -16,6 +16,10 @@
     color: #ecf0f1;
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #ecf0f1;
+}
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     color: #ffffff;
 }
@@ -55,10 +59,6 @@
 .navbar-default .navbar-link:hover {
     color: #ffffff;
 }
-
-.navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
-    color:#ecf0f1;
-  }
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav>li>a {
@@ -101,7 +101,6 @@
     }
 
     .navbar-default .navbar-nav>li>a {
-        color: #ecf0f1;
         padding-top: 0px;
         padding-bottom: 0px;
         line-height: 80px;
