@@ -1,7 +1,5 @@
 .navbar-default {
     background: linear-gradient(to bottom, #ff7f00 0%, #bf5f00 100%);
-    min-height: 80px;
-    height: 80px;
 /*  border-color: #000000;  */
 }
 
@@ -42,7 +40,6 @@
 }
 
 .navbar-default .navbar-toggle {
-    border: none;
     border-color: #D55401;
 }
 
@@ -67,8 +64,7 @@
 }
 
 @media (max-width: 767px) {
-
-    .navbar-default {
+    .navbar-fixed-top {
         min-height: 50px;
         height: 50px;
     }
@@ -93,6 +89,11 @@
 }
 
 @media (min-width: 768px) {
+    .navbar-fixed-top {
+        min-height: 80px;
+        height: 80px;
+    }
+
     .navbar-default .navbar-brand {
         padding-top: 0px;
         padding-bottom: 0px;
