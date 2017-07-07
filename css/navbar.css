@@ -131,7 +131,7 @@
     html {
         height: calc(100% - 80px);
     }
-    #content {
+    body {
         margin-top: 80px;
     }
 }
@@ -199,7 +199,7 @@
     html {
         height: calc(100% - 50px);
     }
-    #content {
+    body {
         margin-top: 50px;
     }
 }
