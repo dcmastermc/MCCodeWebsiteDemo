@@ -80,10 +80,10 @@
         color: #ecf0f1;
     }
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
-        color: #ffffff;
+        color: #ecf0f1;
     }
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
-        color: #ffffff;
+        color: #ecf0f1;
         background: linear-gradient(to bottom, #ff8800 0%, #884400 100%);
     /*  border-color: #000000;  */
     }
