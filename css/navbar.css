@@ -86,6 +86,10 @@
         background: linear-gradient(to bottom, #ff8800 0%, #884400 100%);
     /*  border-color: #000000;  */
     }
+
+    #content {
+        margin-top: 50px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -110,5 +114,9 @@
         position: absolute;
         left: 50%;
         transform: translatex(-50%);
+    }
+
+    #content {
+        margin-top: 80px;
     }
 }
