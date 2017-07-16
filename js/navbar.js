@@ -17,7 +17,7 @@ function adjustSecondaryNavbar(scrollY) {
     } else if (height < 60) {
         height = 60;
     }
-    var css = ".navbar-fixed-top { min-height: " + height + "px; height: " + height + "px; } .navbar-default .navbar-brand { line-height: " + height + "px; } .navbar-default .navbar-brand>img { margin-top: 10px; height: " + (height - 20) + "; } .navbar-default .navbar-nav>li>a { line-height: " + height + "px; } html { height: calc(100% - " + height + "px); } body { margin-top: " + height + "px; } ";
+    var css = ".navbar-fixed-top { min-height: " + height + "px; height: " + height + "px; } .navbar-default .navbar-brand { line-height: " + height + "px; } .navbar-default .navbar-brand>img { margin-top: " + (height / 4 * 3) + "px; height: " + (height - 2 * (height / 4 * 3)) + "px; } .navbar-default .navbar-nav>li>a { line-height: " + height + "px; } html { height: calc(100% - " + height + "px); } body { margin-top: " + height + "px; } ";
     if (secondaryNavbarStyle.styleSheet) {
         secondaryNavbarStyle.styleSheet.cssText = css;
     } else {
@@ -34,12 +34,10 @@ var scrollTicking = false;
 window.addEventListener("scroll", function(e) {
     var newScrollY = window.scrollY;
     if (!scrollTicking) {
-        if (newScrollY != lastKnownScrollYPos) {
-            window.requestAnimationFrame(function() {
-                adjustSecondaryNavbar(newScrollY);
-                scrollTicking = false;
-            });
-        }
+        window.requestAnimationFrame(function() {
+            adjustSecondaryNavbar(newScrollY);
+            scrollTicking = false;
+        });
     }
     lastKnownScrollY = newScrollY;
     scrollTicking = true;
