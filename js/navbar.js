@@ -25,6 +25,14 @@ function adjustSecondaryNavbar(scrollY) {
     }
 }
 
+function unstyleSecondaryNavbar() {
+    if (secondaryNavbarStyle.styleSheet) {
+        secondaryNavbarStyle.styleSheet.cssText = "";
+    } else {
+        secondaryNavbarStyle.innerHTML = "";
+    }
+}
+
 var documentElement = document.documentElement;
 var lastKnownScrollX = (window.pageXOffset || documentElement.scrollLeft) - (documentElement.clientLeft || 0);
 var lastKnownScrollY = (window.pageYOffset || documentElement.scrollTop) - (documentElement.clientTop || 0);
@@ -45,3 +53,18 @@ window.addEventListener("scroll", function(e) {
         scrollTicking = true;
     }
 });
+
+if(window.attachEvent) {
+    window.attachEvent('onresize', function() {
+        var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if (deviceWidth < 900) {
+            unstyleSecondaryNavbar();
+        }
+    });
+} else if(window.addEventListener) {
+    window.addEventListener('resize', function() {
+        if (deviceWidth < 900) {
+            unstyleSecondaryNavbar();
+        }
+    }, true);
+}
