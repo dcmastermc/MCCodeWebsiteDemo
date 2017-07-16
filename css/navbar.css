@@ -114,8 +114,7 @@
         line-height: 80px;
     }
     .navbar-default .navbar-brand>img {
-        margin-top: 10px;
-        height: 60px;
+        height: 120%;
         width: auto;
     }
     .navbar-default .navbar-nav>li>a {
