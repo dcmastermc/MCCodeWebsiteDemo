@@ -32,13 +32,16 @@ var lastKnownScrollY = (window.pageYOffset || documentElement.scrollTop) - (docu
 var scrollTicking = false;
 
 window.addEventListener("scroll", function(e) {
-    var newScrollY = window.scrollY;
-    if (!scrollTicking) {
-        window.requestAnimationFrame(function() {
-            adjustSecondaryNavbar(newScrollY);
-            scrollTicking = false;
-        });
+    var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if (deviceWidth >= 900) {
+        var newScrollY = window.scrollY;
+        if (!scrollTicking) {
+            window.requestAnimationFrame(function() {
+                adjustSecondaryNavbar(newScrollY);
+                scrollTicking = false;
+            });
+        }
+        lastKnownScrollY = newScrollY;
+        scrollTicking = true;
     }
-    lastKnownScrollY = newScrollY;
-    scrollTicking = true;
 });
