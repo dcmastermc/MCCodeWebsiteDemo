@@ -63,6 +63,7 @@ if(window.attachEvent) {
     });
 } else if(window.addEventListener) {
     window.addEventListener('resize', function() {
+        var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         if (deviceWidth < 900) {
             unstyleSecondaryNavbar();
         }
