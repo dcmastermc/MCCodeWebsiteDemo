@@ -1,4 +1,4 @@
-var head = document.head || document.getElementsByTagName('head')[0];
+var head = document.head || document.getElementsByTagName("head")[0];
 
 var secondaryNavbarStyle = document.getElementById("secondaryNavbarStyle");
 
@@ -31,16 +31,16 @@ var lastKnownScrollY = (window.pageYOffset || documentElement.scrollTop) - (docu
 
 var scrollTicking = false;
 
-window.addEventListener('scroll', function(e) {
-            var newScrollY = window.scrollY;
-            if (!scrollTicking) {
-                if (newScrollY != lastKnownScrollYPos) {
-                    window.requestAnimationFrame(function() {
-                        adjustSecondaryNavbar(newScrollY);
-                        scrollTicking = false;
-                    })
-                }
-            }
-            lastKnownScrollY = newScrollY;
-            scrollTicking = true;
+window.addEventListener("scroll", function(e) {
+    var newScrollY = window.scrollY;
+    if (!scrollTicking) {
+        if (newScrollY != lastKnownScrollYPos) {
+            window.requestAnimationFrame(function() {
+                adjustSecondaryNavbar(newScrollY);
+                scrollTicking = false;
+            });
         }
+    }
+    lastKnownScrollY = newScrollY;
+    scrollTicking = true;
+});
