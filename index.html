@@ -14,9 +14,27 @@
         <script src="/js/navbar.js"></script>
         <style>
 .black-outline {
-    webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(-1px -1px 0 black);
-    filter:drop-shadow(1px 1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+    webkit-filter:
+        drop-shadow(1px 1px 0 #cccccc)
+        drop-shadow(1px -1px 0 #cccccc)
+        drop-shadow(-1px 1px 0 #cccccc)
+        drop-shadow(-1px -1px 0 #cccccc);
+    filter:
+        drop-shadow(1px 1px 0 #cccccc)
+        drop-shadow(1px -1px 0 #cccccc)
+        drop-shadow(-1px 1px 0 #cccccc)
+        drop-shadow(-1px -1px 0 #cccccc);
 }
+
+#preview {
+    display: table;
+}
+
+#preview > * {
+    display: table-cell;
+    border: 0;
+}
+
 #welcomePreview {
     background-image: url("/img/preview/welcome.png");
     background-repeat: no-repeat;
