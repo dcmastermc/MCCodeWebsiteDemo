@@ -37,13 +37,19 @@
     position: relative;
     border: 0;
     border-right: 5px solid transparent;
+    width: 45.151513%;
 }
 
-#preview > *:last-child {
+#preview *:first-child {
+    width: 27.424243%;
+}
+
+#preview *:last-child {
     border: 0;
+    width: 27.424243%;
 }
 
-#welcomePreview {
+#preview > *:nth-child(2) > img {
     display: block;
     max-width: 100%;
     max-height: 100%;
@@ -89,6 +95,9 @@
         <div class="jumbotron text-center" style="max-height: 100%; height: 100%;">
             <h1>MCCode</h1>
             <div id="preview" style="max-height: 60%; max-width: 100%; height: 60%; width: 100%;">
+                <div>
+
+                </div>
                 <div>
                     <img id="welcomePreview" class="preview-outline" src="/img/preview/welcome.png" alt=""/>
                 </div>
