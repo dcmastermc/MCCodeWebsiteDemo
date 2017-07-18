@@ -28,10 +28,17 @@
 
 #preview {
     display: table;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #preview > * {
     display: table-cell;
+    border: 0;
+    border-right: 5px solid transparent;
+}
+
+#preview > *:last-child {
     border: 0;
 }
 
