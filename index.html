@@ -13,6 +13,10 @@
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/navbar.js"></script>
         <style>
+.black-outline {
+    webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+    filter:drop-shadow(1px 1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+}
 #welcomePreview {
     background-image: url("/img/preview/welcome.png");
     background-repeat: no-repeat;
@@ -56,10 +60,8 @@
         </nav>
         <div class="jumbotron text-center" style="max-height: 100%; height: 100%;">
             <h1>MCCode</h1>
-            <div id="preview" style="height: 60%; width: auto;">
-                <div id="welcomePreview" style="height: 100%; width: auto;">
-
-                </div>
+            <div id="preview" style="height: 60%; width: 100%;">
+                <div id="welcomePreview" class="black-outline" style="height: 100%; width: auto;"></div>
             </div>
             <h3>The tool for Minecraft vanilla programming</h3>
         </div>
