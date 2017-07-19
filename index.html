@@ -80,7 +80,13 @@
     transform: translate(0%, 0);
 }
 
-@media (max-height: 599px) {
+@media (max-height: 549px) {
+    #preview > *:first-child, #preview > *:last-child {
+        display: none;
+    }
+}
+
+@media (max-height: 499px) {
     #preview {
         display: none;
     }
