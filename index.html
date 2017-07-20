@@ -118,33 +118,8 @@
     }
 }
         </style>
-        <script>
-
-var preview;
-var previewMiddle;
-
-function init() {
-    preview = document.getElementById("preview");
-    previewMiddle = preview.children[1];
-}
-
-function adjustPreviewSize() {
-    var middleWidth = previewMiddle.clientHeight / 494 * 800;
-    previewMiddle.style.width = Math.round(middleWidth).toString() + "px";
-}
-
-if(window.attachEvent) {
-    window.attachEvent("onresize", function() {
-        adjustPreviewSize();
-    });
-} else if(window.addEventListener) {
-    window.addEventListener("resize", function() {
-        adjustPreviewSize();
-    }, true);
-}
-        </script>
     </head>
-    <body onload="init()">
+    <body>
         <nav class="navbar navbar-default navbar-fixed-top" id="secondaryNavbar">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -172,7 +147,7 @@ if(window.attachEvent) {
         </nav>
         <div class="jumbotron text-center" style="max-height: 100%; height: 100%;">
             <h1>MCCode</h1>
-            <div id="preview" onload="adjustPreviewSize();">
+            <div id="preview">
                 <div>
                     <img id="settingsPreview" class="preview-outline" src="/img/preview/welcome.png" alt=""/>
                 </div>
