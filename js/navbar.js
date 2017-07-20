@@ -1,5 +1,5 @@
 
-var localNavbarJs = (function() {
+(function() {
     var head = document.head || document.getElementsByTagName("head")[0];
 
     var secondaryNavbarStyle = document.getElementById("secondaryNavbarStyle");
