@@ -75,7 +75,7 @@
     bottom: 0%;
     left: unset;
     right: 0%;
-    transform: translate(0%, 0);
+    transform: translate(0, 0);
 }
 
 #preview > *:last-child > img {
@@ -85,7 +85,7 @@
     position: absolute;
     bottom: 0%;
     left: 0%;
-    transform: translate(0%, 0);
+    transform: translate(0, 0);
 }
 
 @media (max-height: 549px) {
@@ -126,6 +126,20 @@ function adjustPreviewSize() {
     var previewMiddleWidth = previewMiddle.clientHeight / 494 * 800;
     previewMiddle.style.width = previewMiddleWidth + "px";
 }
+
+if(window.attachEvent) {
+    window.attachEvent("onresize", function() {
+        adjustPreviewSize();
+    });
+} else if(window.addEventListener) {
+    window.addEventListener("resize", function() {
+        adjustPreviewSize();
+    }, true);
+}
+
+$(document).ready(function() {
+    adjustPreviewSize();
+});
         </script>
     </head>
     <body>
@@ -156,7 +170,7 @@ function adjustPreviewSize() {
         </nav>
         <div class="jumbotron text-center" style="max-height: 100%; height: 100%;">
             <h1>MCCode</h1>
-            <div id="preview" onresize="adjustPreviewSize()">
+            <div id="preview">
                 <div>
                     <img id="settingsPreview" class="preview-outline" src="/img/preview/welcome.png" alt=""/>
                 </div>
@@ -185,8 +199,5 @@ function adjustPreviewSize() {
                 </div>
             </div>
         </div>
-        <script>
-adjustPreviewSize();
-        </script>
     </body>
 </html>
