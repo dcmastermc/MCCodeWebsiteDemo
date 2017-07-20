@@ -7,6 +7,8 @@
     background-position: 0 0;
     background-size: 100% 100%;
 
-    width: 2ex;
-    height: 2ex;
+    padding: 5px;
+
+    width: calc(2ex + 10px);
+    height: calc(2ex + 10px);
 }
