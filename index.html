@@ -28,6 +28,8 @@
 
 #preview {
     display: table;
+    table-layout: fixed;
+
     padding-left: 5px;
     padding-right: 5px;
 
@@ -43,16 +45,16 @@
     position: relative;
     border: 0;
     border-right: 5px solid transparent;
-    width: 45.151513%;
+    width: 82.320436%;
 }
 
 #preview > *:first-child {
-    width: 27.424243%;
+    width: 50%;
 }
 
 #preview > *:last-child {
     border: 0;
-    width: 27.424243%;
+    width: 50%;
 }
 
 #preview > * > img {
@@ -119,8 +121,10 @@
         <script>
 function adjustPreviewSize() {
     var preview = document.getElementById("preview");
-    var previewWidth = preview.clientHeight / 300 * 1100;
-    preview.style.width = previewWidth + "px";
+
+    var previewMiddle = preview.childNodes[1];
+    var previewMiddleWidth = previewMiddle.clientHeight / 494 * 800;
+    previewMiddle.style.width = previewMiddleWidth + "px";
 }
         </script>
     </head>
