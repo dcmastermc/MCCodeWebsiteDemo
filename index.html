@@ -130,7 +130,7 @@ function init() {
 
 function adjustPreviewSize() {
     var middleWidth = previewMiddle.clientHeight / 494 * 800;
-    previewMiddle.style.width = "" + middleWidth + "px";
+    previewMiddle.style.width = Math.round(middleWidth).toString() + "px";
 }
 
 if(window.attachEvent) {
