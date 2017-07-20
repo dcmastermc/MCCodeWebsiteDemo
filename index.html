@@ -119,12 +119,18 @@
 }
         </style>
         <script>
-var preview = document.getElementById("preview");
+
+var preview;
+var previewMiddle;
+
+function init() {
+    preview = document.getElementById("preview");
+    previewMiddle = preview.children[1];
+}
 
 function adjustPreviewSize() {
-    var previewMiddle = preview.children[1];
-    var previewMiddleWidth = previewMiddle.clientHeight / 494 * 800;
-    previewMiddle.style.width = previewMiddleWidth + "px";
+    var middleWidth = previewMiddle.clientHeight / 494 * 800;
+    previewMiddle.style.width = "" + middleWidth + "px";
 }
 
 if(window.attachEvent) {
@@ -138,7 +144,7 @@ if(window.attachEvent) {
 }
         </script>
     </head>
-    <body>
+    <body onload="init()">
         <nav class="navbar navbar-default navbar-fixed-top" id="secondaryNavbar">
             <div class="container-fluid">
                 <div class="navbar-header">
