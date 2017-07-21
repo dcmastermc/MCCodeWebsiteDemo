@@ -118,6 +118,15 @@
         display: none;
     }
 }
+
+#navPane > * > .fa + h1,
+#navPane > * > .fa-nostyle + h1,
+#navPane > * > .fa + h2,
+#navPane > * > .fa-nostyle + h2,
+#navPane > * > .fa + h3,
+#navPane > * > .fa-nostyle + h3 {
+    margin-top: 0;
+}
         </style>
     </head>
     <body>
@@ -162,21 +171,21 @@
             <h3>The tool for Minecraft vanilla programming</h3>
         </div>
         <div class="container-fluid" style="height: 100%;">
-            <div class="row" style="height: 50%;">
+            <div id="navPane" class="row" style="height: 50%; text-align: center;">
                 <div class="col-sm-4" style="height: 50%;">
-                    <h1 class="fa-nostyle fa-download fa-5x big-icon"></h1>
-                    <h3>Tutorial</h3>
-                    Free tutorials online.
+                    <h1 class="fa-nostyle fa-download fa-4x big-icon"></h1>
+                    <h1>Tutorial</h1>
+                    Free well documented tutorials online for anyone.
                 </div>
                 <div class="col-sm-4" style="height: 50%;">
-                    <h1 class="fa-nostyle fa-book fa-5x big-icon"></h1>
-                    <h3>Download</h3>
-                    Faster create projects offline.
+                    <h1 class="fa-nostyle fa-book fa-4x big-icon"></h1>
+                    <h1>Download</h1>
+                    Create better projects offline with much faster software.
                 </div>
                 <div class="col-sm-4" style="height: 50%;">
-                    <h1 class="fa-nostyle fa-code fa-5x big-icon"></h1>
-                    <h3>Online</h3>
-                    Online MCCode for small devices.
+                    <h1 class="fa-nostyle fa-code fa-4x big-icon"></h1>
+                    <h1>Online</h1>
+                    Program online MCCode for a quick start and taste of the strong MCCode.
                 </div>
             </div>
         </div>
